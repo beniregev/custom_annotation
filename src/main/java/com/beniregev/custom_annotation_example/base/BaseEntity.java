@@ -1,6 +1,6 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.base;
+package com.beniregev.custom_annotation_example.base;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro.BaseRO;
+import com.beniregev.custom_annotation_example.base.ro.BaseRO;
 
 import javax.persistence.*;
 import java.io.Serializable;

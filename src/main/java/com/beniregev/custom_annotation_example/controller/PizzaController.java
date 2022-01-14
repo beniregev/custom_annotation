@@ -1,7 +1,7 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.controller;
+package com.beniregev.custom_annotation_example.controller;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro.ResultRO;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.pizza.PizzaService;
+import com.beniregev.custom_annotation_example.base.ro.ResultRO;
+import com.beniregev.custom_annotation_example.pizza.PizzaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Controller for work with Pizza REST api service.
+ * Controller for work with Pizza REST API service.
  */
 @Controller
 public class PizzaController {
@@ -28,9 +28,9 @@ public class PizzaController {
 	 * e.g. /pizza/menu?name=chees&maxPrice=10 should return pizza data for pizza 'Cheesy Crust'
 	 * e.g. /pizza/menu?minPrice=0&maxPrice=1 should return pizza data for pizza 'Margherita'
 	 *
-	 * @param request
-	 * @param response
-	 * @return
+	 * @param request A {@link HttpServletRequest} class parameter
+	 * @param response A {@link HttpServletResponse} class parameter
+	 * @return {@link ResultRO} class object containing the result for the request
 	 */
 	@ResponseBody
 	@RequestMapping(value = "/pizza/menu", method = RequestMethod.GET)
@@ -54,14 +54,16 @@ public class PizzaController {
 	 * annotated with the new custom java annotation.
 	 * e.g When calling /pizza/order?id=3 the result should be 'name=Sicilian&price=2.99'
 	 *
-	 * @param id
-	 * @param request
-	 * @param response
-	 * @return
+	 * @param id The unique identification of the order
+     * @param request A {@link HttpServletRequest} class parameter
+     * @param response A {@link HttpServletResponse} class parameter
+	 * @return {@link ResultRO} class object containing order details matching the requested unique id
 	 */
 	@ResponseBody
 	@RequestMapping(value = "/pizza/order", method = RequestMethod.POST)
-	public ResultRO orderPizza(@RequestParam Long id, HttpServletRequest request, HttpServletResponse response) {
+	public ResultRO orderPizza(@RequestParam Long id,
+                               HttpServletRequest request,
+                               HttpServletResponse response) {
 		return pizzaService.orderPizza(id);
 	}
 }

@@ -1,7 +1,7 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.base;
+package com.beniregev.custom_annotation_example.base;
 
 /**
- * Base interface for DAO.
+ * Base interface for Data Access Object (DAO).
  */
 public interface BaseDao {
 

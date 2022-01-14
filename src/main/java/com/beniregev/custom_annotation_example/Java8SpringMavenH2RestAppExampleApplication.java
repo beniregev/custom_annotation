@@ -1,4 +1,4 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example;
+package com.beniregev.custom_annotation_example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

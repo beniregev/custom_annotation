@@ -1,16 +1,16 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.base;
+package com.beniregev.custom_annotation_example.base;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro.BaseRO;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro.BaseUpdatableRO;
+import com.beniregev.custom_annotation_example.base.ro.BaseRO;
+import com.beniregev.custom_annotation_example.base.ro.BaseUpdatableRO;
 
 import javax.persistence.*;
 import java.util.Date;
 
 /**
- * Base class for Updateble Hibernate entities.
+ * Base class for Updatable Hibernate entities.
  */
 @MappedSuperclass
-public abstract class BaseUpdatebleEntity extends BaseEntity {
+public abstract class BaseUpdatableEntity extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
 

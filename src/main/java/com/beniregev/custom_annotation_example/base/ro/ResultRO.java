@@ -1,4 +1,4 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro;
+package com.beniregev.custom_annotation_example.base.ro;
 
 import java.io.Serializable;
 

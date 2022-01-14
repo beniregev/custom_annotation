@@ -1,4 +1,4 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.base;
+package com.beniregev.custom_annotation_example.base;
 
 import org.hibernate.Criteria;
 import org.hibernate.Query;
@@ -12,7 +12,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Base class for DAO.
+ * Base class for Data Access Object (DAO).
  */
 @SuppressWarnings("unchecked")
 @Repository

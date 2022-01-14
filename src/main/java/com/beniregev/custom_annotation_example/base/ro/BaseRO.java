@@ -1,24 +1,43 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro;
+package com.beniregev.custom_annotation_example.base.ro;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public abstract class BaseUpdatableRO extends BaseRO {
+public abstract class BaseRO implements Serializable {
 
 	// ------------------------ Constants -----------------------
 	private static final long serialVersionUID = 1L;
 
 	// ------------------------ Fields --------------------------
-	private long lastUpdateTime;
+	private long id;
+
+	private long creationTime;
 
 	// ------------------------ Public methods ------------------
 	// ------------------------ Constructors --------------------
-	// ------------------------ Field's handlers ----------------
-	public long getLastUpdateTime() {
-		return lastUpdateTime;
+	public BaseRO() {
+
 	}
 
-	public void setLastUpdateTime(long lastUpdateTime) {
-		this.lastUpdateTime = lastUpdateTime;
+	public BaseRO(long id) {
+		this.id = id;
+	}
+
+	// ------------------------ Field's handlers ----------------
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public long getCreationTime() {
+		return creationTime;
+	}
+
+	public void setCreationTime(long creationTime) {
+		this.creationTime = creationTime;
 	}
 
 	@Override
@@ -29,16 +48,14 @@ public abstract class BaseUpdatableRO extends BaseRO {
 		if(o == null || getClass() != o.getClass()) {
 			return false;
 		}
-		if(!super.equals(o)) {
-			return false;
-		}
-		BaseUpdatableRO that = (BaseUpdatableRO) o;
-		return lastUpdateTime == that.lastUpdateTime;
+		BaseRO baseRO = (BaseRO) o;
+		return id == baseRO.id &&
+				creationTime == baseRO.creationTime;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(super.hashCode(), lastUpdateTime);
+		return Objects.hash(id, creationTime);
 	}
 
 	// ------------------------ Private methods -----------------

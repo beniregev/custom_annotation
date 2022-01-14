@@ -1,6 +1,6 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.pizza;
+package com.beniregev.custom_annotation_example.pizza;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro.ResultRO;
+import com.beniregev.custom_annotation_example.base.ro.ResultRO;
 
 public interface PizzaService {
 

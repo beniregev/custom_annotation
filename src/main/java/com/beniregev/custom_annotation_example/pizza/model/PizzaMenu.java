@@ -1,9 +1,9 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.pizza.model;
+package com.beniregev.custom_annotation_example.pizza.model;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.BaseUpdatebleEntity;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro.BaseRO;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.pizza.ro.PizzaMenuRO;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.utils.MyNewAnnotation;
+import com.beniregev.custom_annotation_example.base.BaseUpdatableEntity;
+import com.beniregev.custom_annotation_example.base.ro.BaseRO;
+import com.beniregev.custom_annotation_example.pizza.ro.PizzaMenuRO;
+import com.beniregev.custom_annotation_example.utils.MyNewAnnotation;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "pizza_menu")
-public class PizzaMenu extends BaseUpdatebleEntity {
+public class PizzaMenu extends BaseUpdatableEntity {
 
 	private static final long serialVersionUID = 1L;
 

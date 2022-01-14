@@ -1,6 +1,6 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.pizza;
+package com.beniregev.custom_annotation_example.pizza;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.pizza.model.PizzaMenu;
+import com.beniregev.custom_annotation_example.pizza.model.PizzaMenu;
 
 import java.util.List;
 

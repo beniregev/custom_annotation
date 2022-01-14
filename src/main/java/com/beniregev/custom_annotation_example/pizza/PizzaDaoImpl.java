@@ -1,14 +1,13 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.pizza;
+package com.beniregev.custom_annotation_example.pizza;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.BaseDaoImpl;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.pizza.model.PizzaMenu;
+import com.beniregev.custom_annotation_example.base.BaseDaoImpl;
+import com.beniregev.custom_annotation_example.pizza.model.PizzaMenu;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.LogicalExpression;
 import org.hibernate.criterion.Restrictions;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -18,9 +17,6 @@ import java.util.List;
 public class PizzaDaoImpl extends BaseDaoImpl implements PizzaDao {
 
 	protected Log log = LogFactory.getLog(getClass());
-
-	@Autowired
-	private PizzaDao pizzaDao;
 
 	@Override
 	public List<PizzaMenu> getPizzaMenus() {

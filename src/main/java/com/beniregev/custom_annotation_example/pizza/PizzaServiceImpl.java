@@ -1,10 +1,9 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.pizza;
+package com.beniregev.custom_annotation_example.pizza;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro.ResultRO;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.pizza.model.PizzaMenu;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.pizza.ro.PizzaMenuRO;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.utils.MyNewAnnotation;
-import com.beniregev.java8_spring_maven_h2_rest_app_example.utils.Utils;
+import com.beniregev.custom_annotation_example.base.ro.ResultRO;
+import com.beniregev.custom_annotation_example.pizza.model.PizzaMenu;
+import com.beniregev.custom_annotation_example.pizza.ro.PizzaMenuRO;
+import com.beniregev.custom_annotation_example.utils.Utils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;

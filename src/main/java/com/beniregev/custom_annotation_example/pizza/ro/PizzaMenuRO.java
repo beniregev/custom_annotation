@@ -1,6 +1,6 @@
-package com.beniregev.java8_spring_maven_h2_rest_app_example.pizza.ro;
+package com.beniregev.custom_annotation_example.pizza.ro;
 
-import com.beniregev.java8_spring_maven_h2_rest_app_example.base.ro.BaseUpdatableRO;
+import com.beniregev.custom_annotation_example.base.ro.BaseUpdatableRO;
 
 public class PizzaMenuRO extends BaseUpdatableRO {
 
