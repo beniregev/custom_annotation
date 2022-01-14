@@ -35,8 +35,8 @@ public class PizzaController {
 	@ResponseBody
 	@RequestMapping(value = "/pizza/menu", method = RequestMethod.GET)
 	public ResultRO getMenu(@RequestParam(value = "name", required = false) String menuName,
-							@RequestParam(value = "minPrice", required = false) Integer minPrice,
-							@RequestParam(value = "maxPrice", required = false) Integer maxPrice,
+							@RequestParam(value = "minPrice", required = false) Double minPrice,
+							@RequestParam(value = "maxPrice", required = false) Double maxPrice,
 							HttpServletRequest request,
 							HttpServletResponse response) {
 		if (menuName != null || minPrice != null || maxPrice != null) {

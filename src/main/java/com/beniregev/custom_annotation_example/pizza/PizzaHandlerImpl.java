@@ -25,7 +25,7 @@ public class PizzaHandlerImpl implements PizzaHandler {
 
 	@Override
 	@Transactional(readOnly = true)
-	public List<PizzaMenu> getPizzaMenu(String menuName, Integer minPrice, Integer maxPrice) {
+	public List<PizzaMenu> getPizzaMenu(String menuName, Double minPrice, Double maxPrice) {
 		return pizzaDao.getPizzaMenus(menuName, minPrice, maxPrice);
 	}
 

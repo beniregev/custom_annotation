@@ -42,7 +42,7 @@ public class PizzaServiceImpl implements PizzaService {
 	}
 
 	@Override
-	public ResultRO getMenu(String menuName, Integer minPrice, Integer maxPrice) {
+	public ResultRO getMenu(String menuName, Double minPrice, Double maxPrice) {
 		ResultRO resultRO = new ResultRO();
 
 		try {

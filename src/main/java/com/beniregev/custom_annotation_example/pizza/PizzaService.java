@@ -6,7 +6,7 @@ public interface PizzaService {
 
 	ResultRO getMenu();
 
-	ResultRO getMenu(String menuName, Integer minPrice, Integer maxPrice);
+	ResultRO getMenu(String menuName, Double minPrice, Double maxPrice);
 
 	ResultRO orderPizza(Long id);
 }

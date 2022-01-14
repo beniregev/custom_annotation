@@ -25,7 +25,7 @@ public class PizzaDaoImpl extends BaseDaoImpl implements PizzaDao {
 	}
 
 	@Override
-	public List<PizzaMenu> getPizzaMenus(String menuName, Integer minPrice, Integer maxPrice) {
+	public List<PizzaMenu> getPizzaMenus(String menuName, Double minPrice, Double maxPrice) {
 		Criteria criteria = getCurrentSession().createCriteria(PizzaMenu.class);
 		Criterion criteriaMenuName = null;
 		if (menuName != null && !menuName.isEmpty()) {

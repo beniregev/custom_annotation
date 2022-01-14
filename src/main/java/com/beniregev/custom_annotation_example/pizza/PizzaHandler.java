@@ -8,7 +8,7 @@ public interface PizzaHandler {
 
 	List<PizzaMenu> getPizzaMenu();
 
-	List<PizzaMenu> getPizzaMenu(String menuName, Integer minPrice, Integer maxPrice);
+	List<PizzaMenu> getPizzaMenu(String menuName, Double minPrice, Double maxPrice);
 
 	PizzaMenu getPizza(Long id);
 }
