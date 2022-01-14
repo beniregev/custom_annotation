@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.beniregev</groupId>
-    <artifactId>java8_spring_maven_h2_rest_app_example</artifactId>
+    <artifactId>custom-annotation-demo-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>java8_spring_maven_h2_rest_app_example</name>
-    <description>java8_spring_maven_h2_rest_app_example</description>
+    <name>custom annotation demo app</name>
+    <description>Custom annotation demo application using java 8, spring framework (w/ boot), Maven, H2 database, and REST API</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
